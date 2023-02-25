@@ -1,0 +1,451 @@
+/*--------------------------------------------------------------
+           Contenedor de todo la descripcion
+--------------------------------------------------------------*/
+.container{
+    margin-top: 2%;
+    max-width: 1200px;
+}
+
+header {
+    background: #000000;
+    box-shadow: 0px 0px 25px 0 rgba(254, 252, 252, 0.08);
+    z-index: 997;
+  }
+   /*--------------------------------------------------------------
+            NavBar
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.logo a{
+color: white;
+font-size: 50px;
+text-decoration: none;
+}
+nav span{
+color: #149ddd;
+}
+
+nav ul li{
+list-style-type: none;
+display: inline-block;
+padding: 10px 20px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  }
+
+  nav ul li a :hover{
+   color: #149ddd;
+   transition: .3s;
+    }
+
+.button{
+  font-family: "Poppins", sans-serif;
+  color: #149ddd;
+  background-color: rgb(0, 0, 0);
+  border-radius: 2em;
+  box-shadow: 0 4px 4px rgba(201, 196, 196, 0.4);
+  font-weight: bold;
+}
+.button:hover{
+  background-color: #173b6c;
+}
+
+
+  /*--------------------------------------------------------------
+            descripcion
+--------------------------------------------------------------*/
+.perfil{
+  padding-top: 10%;
+  margin-left: 15%;
+  font-size: large;
+}
+.perfil img{
+border-radius: 3%;
+margin-left: 66%;
+margin-bottom: 20%;
+}
+.perfil p{
+  margin-left: 5%;
+}
+.perfil h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+  }
+  
+  .perfil ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .perfil ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .perfil  ul strong {
+    margin-right: 10px;
+  }
+  
+  .perfil  ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+/*--------------------------------------------------------------
+          Contenedor Experiencia Academica
+--------------------------------------------------------------*/
+.container-experience{
+padding-top: 15%;
+}
+.container-experience img{
+    width: 375px;
+    height: 200px;
+
+}
+/*--------------------------------------------------------------
+          Contenedor Experiencia Laboral
+--------------------------------------------------------------*/
+.experiencia{
+  padding-top: 15%;
+}
+
+/*--------------------------------------------------------------
+          Contenedor Habilidades
+--------------------------------------------------------------*/
+.habilidades{
+  padding-top: 15%;
+}
+.habilidades .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.habilidades .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+}
+
+.habilidades .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.habilidades .bar {
+  height: 14px;
+  background:#f3f3f3;
+  border-radius: 3px;
+}
+
+.habilidades .bar {
+  height: 14px;
+ border-radius: 3px;
+ position: relative;
+background-color: #1590cd;
+animation: fillBars 4.5s 1;
+}
+
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+/*--------------------------------------------------------------
+          Contenedor Intereses
+--------------------------------------------------------------*/
+.intereses{
+  padding-top: 15%;
+  width: 100%;
+}
+.intereses-container{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white
+}
+.swiper{
+  width: 100%;
+}
+
+.swiper-wrapper{
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.intereses-card{
+  width: 20em;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+  padding: 2em 1em;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1px);
+}
+
+.card__image{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid coral;
+  padding: 3px;
+  margin-bottom: 2em;
+}
+
+.card__image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: .2em;
+}
+
+.card__text{
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1em 0;
+}
+
+
+/*--------------------------------------------------------------
+          Contenedor Referencias
+--------------------------------------------------------------*/
+.referencias{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.referencias .section-header {
+  margin-bottom: 40px;
+}
+
+.referencias .testimonials-carousel,
+.referencias .testimonials-slider {
+  overflow: hidden;
+}
+
+.referencias .testimonial-item {
+  text-align: center;
+}
+
+.referencias .testimonial-item .testimonial-img {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin: 0 auto;
+}
+
+.referencias .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+.referencias .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 15px 0;
+}
+
+.referencias .testimonial-item .quote-icon-left,
+.referencias .testimonial-item .quote-icon-right {
+  color: #c8efea;
+  font-size: 26px;
+}
+
+.referencias .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.referencias .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.referencias .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+}
+
+@media (min-width: 992px) {
+  .referencias .testimonial-item p {
+    width: 80%;
+  }
+}
+
+.referencias .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.referencias .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #86b5af;
+}
+
+.referencias .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #2a8fc1;
+}
+
+/*--------------------------------------------------------------
+           Modificacion de ScrollBar
+--------------------------------------------------------------*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+  border-radius: 4%;
+  box-shadow: inset 0 0 10px #78767b;
+}
+
+::-webkit-scrollbar-thumb{
+border-radius: 4%;
+background-color: grey;
+}
+
+/*--------------------------------------------------------------
+           Hero
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/back.jpg") top center;
+    background-size: cover;
+  }
+  
+  #hero{
+    content: "";
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+  }
+  
+  #hero h1 {
+    margin: 0 0 20px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  
+  #hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+
+  }
+  
+  #hero p span {
+    color: rgb(252, 252, 252);
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+      margin-bottom: 5%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  /*--------------------------------------------------------------
+                            Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #e9e8e6;
+  padding: 30px 0;
+  color: #222222;
+  font-size: 14px;
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+#footer .credits a {
+  color: #34b7a7;
+}
